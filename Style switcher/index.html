@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> color switcher == Khurshed </title>
+	<link rel="stylesheet" id="colors" href="css/colors/default.css" type="text/css">
+	<link rel="stylesheet" href="css/color-switcher.css" type="text/css" />
+</head>
+<body>
+<h2> Color change on click </h2>
+<div id="color-style-switcher"> 
+		<div>  
+			<h3>Color Palette</h3>
+			<ul class="colors">
+				<li><a class="color1 active" href="#"></a></li>
+				<li><a class="color2" href="#"></a></li>
+				<li><a class="color3" href="#"></a></li>
+				<li><a class="color4" href="#"></a></li>
+			</ul> 
+		</div> 
+	</div> 
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  
+  $(document).ready(function () {
+  	$("ul.colors .color1" ).click(function(){
+		$("#colors" ).attr("href", "css/colors/color-1.css" );
+		return false;
+	});
+
+	$("ul.colors .color2" ).click(function(){
+		$("#colors" ).attr("href", "css/colors/color-2.css" );
+		return false;
+	});
+
+	$("ul.colors .color3" ).click(function(){
+		$("#colors" ).attr("href", "css/colors/color-3.css" );
+		return false;
+	});
+
+	$("ul.colors .color4" ).click(function(){
+		$("#colors" ).attr("href", "css/colors/color-4.css" );
+		return false;
+	});
+
+});	
+
+  </script>
+</body>
+</html>
